@@ -1,8 +1,8 @@
 import "./main.css";
-import mainLogo from '/workspace/4AM/4am/app/components/public/img/logo_main.webp';
-import emailLogo from '/workspace/4AM/4am/app/components/public/img/social_logo_svg/email_logo.svg';
-import telegramLogo from '/workspace/4AM/4am/app/components/public/img/social_logo_svg/telegram_logo.svg';
-import xLogo from '/workspace/4AM/4am/app/components/public/img/social_logo_svg/x_logo.svg';
+import mainLogo from '../public/img/logo_main.webp';
+import emailLogo from '../public/img/social_logo_svg/email_logo.svg';
+import telegramLogo from '../public/img/social_logo_svg/telegram_logo.svg';
+import xLogo from '../public/img/social_logo_svg/x_logo.svg';
 
 
 
