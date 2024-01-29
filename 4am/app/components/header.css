@@ -1,0 +1,76 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 1.4% 4%;
+    font-size: 2vh;
+  }
+  
+  .navigation-links {
+    display: flex;
+    column-gap: 20%;
+  }
+  
+  .navigation-links a {
+    color: black;
+    opacity: 0.5;
+    text-decoration: none;
+    margin: 0 auto;
+  }
+  
+  .navigation-links a {
+    color: black;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: color 2.5s ease, opacity 0.3s ease;
+  }
+  
+  .navigation-links a:hover {
+    color: #000000; /* ваш цвет при наведении */
+    opacity: 1;
+  }
+  
+  .action-button {
+    padding: 1% 2%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease, opacity 0.5s ease;
+  }
+  
+  .action-button:hover {
+    background-color: transparent;
+    color: black;
+    opacity: 0.5;
+  }
+  
+  @media (max-width: 767px) {
+
+    .main-header {
+      display: flex;
+      flex-direction: column; /* Change to column layout */
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      color: black;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 8%;
+      padding-bottom: 8%;
+      font-size: 2vh;
+    }
+  
+    .navigation-links {
+      flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+      column-gap: 25px; /* Remove the gap between flex items */
+    }
+  
+    .action-button {
+      display: none;
+    }
+  }
+  
