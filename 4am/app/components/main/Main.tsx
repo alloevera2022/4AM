@@ -1,26 +1,31 @@
 import "./main.css";
+import mainLogo from '/workspace/4AM/4am/app/components/public/img/logo_main.webp';
+import emailLogo from '/workspace/4AM/4am/app/components/public/img/social_logo_svg/email_logo.svg';
+import telegramLogo from '/workspace/4AM/4am/app/components/public/img/social_logo_svg/telegram_logo.svg';
+import xLogo from '/workspace/4AM/4am/app/components/public/img/social_logo_svg/x_logo.svg';
+
+
+
+
 
 export default function Main() {
     return (
       <section className="Main">
     <div className="main__content">
         <div className="main__left-block">
-            <div className="main__left-block-content">  <img className="logo" src="#!" alt="Logo"/>
+            <div className="main__left-block-content">  <img src={mainLogo.src} className='main_logo' alt="Logo"/>
             <h1>Keep your favourite items now digitally</h1>
             <h2>AXXIS transforms iconic clothing and footwear into unique NFTs. Own a piece of fashion, trade with ease, and step into a world where every item tells a story.</h2>
-            <button className="button">Get yours</button>
-
+            <div className="main_button"><button>Get yours</button></div>
             <div className="main__left-block-content-links">
-                <ul>
-                    <li><a href="#">info@AXXISproject.io</a></li>
-                    <li><a href="#">@AXXIS</a></li>
-                    <li><a href="#">@AXXIS_project</a></li>
-                </ul>
-            </div></div>
+                    <div className="main-link"><a href="#"><img src={emailLogo.src} className="sl_logos"/></a><a href="#"><p className="sl_text">info@AXXISproject.io</p></a></div>
+                    <div className="main-link"><a href="#"><img src={telegramLogo.src} className="sl_logos"/></a><a href="#"><p className="sl_text">@AXXIS</p></a></div>
+                    <div className="main-link"><a href="#"><img src={xLogo.src} className="sl_logos"/></a><a href="#"><p className="sl_text">@AXXIS_project</p></a></div>                 
+            </div>
+            </div>
          
         </div>
         <div className="main__right-block">
-            <img src="" alt="Image"/>
         </div>
     </div>
 

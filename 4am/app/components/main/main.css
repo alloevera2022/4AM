@@ -1,0 +1,165 @@
+.Main {
+  overflow: hidden;
+  margin-top: 12vh; /* Исправлено: была опечатка (12svh -> 12vh) */
+}
+
+.main__left-block, 
+.main__right-block
+ {
+ width: 50%;
+}
+
+
+.main__left-block {
+  float: left;
+  min-width: 550px;
+
+}
+
+.main__right-block {
+  float: right;
+}
+
+/* Опциональные стили для улучшения визуального восприятия */
+.main__left-block {
+  height: 88vh;
+  background-color: #242424;
+  color: white;
+}
+
+.main__left-block-content {
+  padding: 10vh 3vw; /* Упрощено */
+  gap: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main_logo {
+  width: 15%;
+
+}
+
+.main__left-block-content h1 {
+  font-size: 6vh;
+  line-height: 110%;
+  font-weight: 500;
+  text-align: left;
+  max-width: 600px;
+}
+
+.main__left-block-content h2 {
+  font-size: 2.2vh;
+  line-height: 150%;
+}
+
+.main_button {
+  color: hsla(103.63636363636364, 0.00%, 6.67%, 1.00);
+  text-decoration: none;
+}
+
+.main_button button {
+  font-size: 2.2vh;
+  padding: 2.5% 3%;
+  background-color: hsla(106.01036269430053, 0.00%, 86.00%, 1.00);
+  border-radius: 0.2em;
+  font-weight: 500;
+}
+
+.main__right-block {
+  height: 88vh;
+  background-image: url("../public/img/main_img.webp");
+  background-size: cover;
+}
+
+.main__left-block-content-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+}
+
+.main-link {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+
+}
+
+.main__left-block-content-links a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+
+.sl_logos {
+  max-width: 50px;
+}
+
+.sl_text {
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 2svh;
+}
+
+@media( max-width: 1100px){
+
+ 
+
+
+  .Main {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__left-block-content {
+    padding: 3vh 3vw; /* Упрощено */
+    gap: 2vh;
+
+  }
+
+
+  .main__left-block,
+  .main__right-block {
+    width: 100%;
+  }
+
+
+  .main__left-block {
+    min-width: 0; /* Левый блок может сжиматься до 0 ширины */
+    height: 77vh;
+  }
+
+  .main__right-block {
+    height: 11vh;
+  }
+
+  .main__left-block-content-links {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2vh;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .main-link {
+    margin-bottom: 10px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  .sl_logos {
+    max-width: 28px;
+  }
+
+
+
+
+
+}
