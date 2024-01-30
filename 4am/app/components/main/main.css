@@ -131,7 +131,7 @@
 
   .main__left-block {
     min-width: 0; /* Левый блок может сжиматься до 0 ширины */
-    height: 77vh;
+    height: 78vh;
   }
 
   .main__right-block {
@@ -154,12 +154,24 @@
 
 
 @media (max-width: 767px) {
+
+  .Main {
+    margin-top: 8vh; /* Исправлено: была опечатка (12svh -> 12vh) */
+  }
+
   .sl_logos {
     max-width: 28px;
   }
 
 
+  .main__left-block {
+    min-width: 0; /* Левый блок может сжиматься до 0 ширины */
+    height: 75vh;
+  }
 
+  .main__right-block {
+    height: 17vh;
+  }
 
 
 }
