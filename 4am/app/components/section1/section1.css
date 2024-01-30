@@ -1,12 +1,13 @@
 .Section1 {
-    padding: 4% 26px 4% 3vw;
+    padding: 4% 40px 4% 3vw;
     height: 88vh;
+    background-color: white;
 
 }
 
 .section1-subtitle {
-    color: black;
-    opacity: 0.5;
+    color: rgba(0, 0, 0, 0.5);
+
     font-size: 3.2vh;
     margin-bottom: 1%;
 }
@@ -93,7 +94,8 @@
 
     .Section1 {
         padding: 4% 3vw;
-        height: 88vh;
+        height: 92vh;
+        margin-bottom: 15%;
     
     }
     .section1__content-blog {
@@ -102,8 +104,6 @@
    }
 
    .section1-subtitle {
-    color: black;
-    opacity: 0.5;
     font-size: 2.8vh;
     margin-bottom: 1%;
 }

@@ -1,0 +1,295 @@
+.Timer {
+    background-color: #161616;
+    color: white;
+    padding: 4% 40px 4% 3vw;
+    height: 88vh;
+}
+
+.timer__conteiner {
+    display: flex;
+    justify-content: space-between;
+    max-height: auto;
+}
+
+.timer__info {
+    max-width: 700px;
+}
+
+.timer__info-title {
+    font-size: 6vh;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 3vh;
+}
+
+.timer__info-text {
+    font-size: 2.3vh;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.timer__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+    border: 1px solid #53535380;
+    border-radius: 5px;
+    max-width: 550px;
+    padding: 2%;
+
+}
+/* 
+.timer__content::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../public/img/footer_logo.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;  
+}   */
+
+.timer__price {
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+.timer__price1 {
+    color: rgba(255, 255, 255, 0.541);
+}
+
+
+.timer__price2 {
+    border: 1px solid white;
+    padding: 1% 4%;
+    border-radius: 5px;
+}
+
+.timer__adress {
+    max-width: 400px;
+}
+
+.timer__adress_title {
+    font-size: 2.3vh;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.timer__adress_text {
+    font-size: 1.4vh;
+    background-color: #161616;
+    padding: 4% 2%;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: underline;
+    margin-bottom: 2%;   
+}
+
+.timer__adress_copy {
+    font-size: 2vh;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.541);
+    margin-bottom: 6%;
+}
+
+
+.timer__manual {
+    margin-bottom: 6%;
+    font-size: 2.4vh;
+}
+
+.timer__manual_title {
+    margin-bottom: 2%;
+    
+
+}
+
+.timer__manual_list {
+    list-style-position: inside;
+    font-size: 2vh;
+
+}
+
+.timer__manual_listpoint {
+    margin-bottom: 1%;
+    color: rgba(255, 255, 255, 0.541);
+    font-weight: 400;
+}
+
+
+.timer__clock_title {
+    font-size: 3vh;
+    margin-bottom: 4%;
+
+}
+
+.timer__clock_nums {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 4vh;
+    padding: 0 3%;
+    margin-bottom: 4%;
+}
+
+.timer__clock_num-up {
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.timer__clock_num-up {
+    font-size: 4vh;
+}
+
+.timer__clock_num-down {
+    margin-bottom: 2%;
+    font-size: 2.4vh;
+    color: rgba(255, 255, 255, 0.288);
+    font-weight: 400;
+}
+
+.timer__clock_timeline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.103);
+    border-radius: 25px;
+    margin-bottom: 2%;
+}
+
+.timer__clock_timeline-dot {
+    margin-left: 5px;
+    height: 60%;
+    width: 2.5%;
+    border-radius: 50px;
+    background-color: #161616;
+    border: 1px solid white;
+}
+
+.timer__clock_percents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 1110px) {
+    .timer__adress_text {
+        font-size: 1.2vh;
+    }    
+
+}
+
+@media (max-width: 990px) {
+
+    .Timer {
+        padding: 4% 3vw;
+        height: 92vh;
+    }
+
+    
+
+    .timer__conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .timer__info {
+        margin-top: 10%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .timer__info-title {
+        text-align: center;
+        font-size: 3vh;
+    }
+
+    .timer__info-text {
+        text-align: center;
+        font-size: 1.6vh;
+        margin-bottom: 10%;
+
+    }
+
+
+    .timer__price {
+        font-size: 1.5vh;
+        margin-bottom: 4%;
+    }
+    
+    .timer__adress_title {
+        font-size: 2vh;
+        margin-bottom: 2%;
+    }
+    
+    .timer__adress_text {
+        font-size: 1.2vh; 
+    }
+    
+    .timer__adress_copy {
+        font-size: 1.6vh;
+        margin-bottom: 4%;
+    }
+    
+    
+    .timer__manual {
+        margin-bottom: 4%;
+        font-size: 2vh;
+    }
+    
+    .timer__manual_list {
+        font-size: 1.6vh;   
+    }
+    
+    .timer__clock_title {
+        font-size: 2.2vh;
+        margin-bottom: 3%; 
+    }
+    
+    .timer__clock_nums {
+        font-size: 2.8vh;
+        margin-bottom: 3%;
+    }
+    
+    .timer__clock_num-up {
+        font-size: 3.2vh;
+    }
+    
+    .timer__clock_num-down {
+        font-size: 2vh;
+
+    }
+
+
+}
+@media (max-width: 767px) {
+
+.timer__content {
+
+    text-align: center;
+    width: 88%;
+    padding: 2%;
+}
+
+.timer__price {
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+}
