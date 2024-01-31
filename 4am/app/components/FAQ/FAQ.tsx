@@ -7,7 +7,8 @@ import footerLogo from '../public/img/logo_main.webp';
 
 export default function FAQ() {
     return (
-      <section className="FAQ">
+      <section>
+        <div className="FAQ">
         <div className="faq__container">
             <h1 className="faq__header">F.A.Q.</h1>
             <div className="faq__content">
@@ -55,6 +56,7 @@ export default function FAQ() {
                 </div>
                 
             </div>
+            <img className="faq_bg" src={backgroundImg.src} alt="footer_bg"></img>
             <div className="faq__button"><button>Get it touch</button></div>
             <div className="faq__footer">
                 <div className="faq__footer-left">
@@ -71,6 +73,7 @@ export default function FAQ() {
                     </div>               
                 </div>
             </div>
+        </div>
         </div>
     </section >
     );

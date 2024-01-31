@@ -156,7 +156,7 @@
 @media (max-width: 767px) {
 
   .Main {
-    margin-top: 8vh; /* Исправлено: была опечатка (12svh -> 12vh) */
+    margin-top: 8vh;
   }
 
   .sl_logos {
@@ -165,7 +165,7 @@
 
 
   .main__left-block {
-    min-width: 0; /* Левый блок может сжиматься до 0 ширины */
+    min-width: 0; 
     height: 75vh;
   }
 

@@ -1,13 +1,29 @@
-.FAQ {
-    padding: 4% 40px 4% 3vw;
-    height: 88vh;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
 
+.faq_bg {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    max-width: 17%;
+    object-fit: cover;
+    object-position: 100% 20%;
 }
 
-.faq__container {  
+.FAQ {
+    position: relative; /* Добавьте position: relative; для корректной работы z-index */
+    padding: 4% 40px 4% 3vw;
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
+}
+
+   
+
+.faq__container {
+    z-index: 2;
+    background-color: transparent; 
     margin: 0 auto; 
     max-height: auto;
     max-width: 1200px;
@@ -67,6 +83,7 @@
   transform: rotate(-45deg);
 }
 
+
 .faq__button {
     display: flex;
     justify-content: center;
@@ -120,9 +137,37 @@
     opacity: 0.4;
 }
 
+@media (max-width: 1700px) {
+    
+.faq_bg {
+    max-width: 15%;
+
+}
+
+}
+
+
+@media (max-width: 1500px) {
+    
+    .faq_bg {
+        max-width: 12%;
+    
+    }
+
+    .faq__container {
+        background-color: rgba(255, 255, 255, 0.884); 
+    }
+    
+    }
+
+
 @media (max-width: 1100px) {
     .faq__content-element {
         height: auto;
+    }
+
+    .faq_bg {
+    display: none;
     }
 
 }
