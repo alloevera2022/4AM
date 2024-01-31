@@ -171,10 +171,11 @@
 .timer__clock_timeline-dot {
     margin-left: 5px;
     height: 60%;
-    width: 2.5%;
-    border-radius: 50px;
+    width: 3%;
+    border-radius: 50%;
     background-color: #161616;
     border: 1px solid white;
+
 }
 
 .timer__clock_percents {
