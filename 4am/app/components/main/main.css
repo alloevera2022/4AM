@@ -64,6 +64,21 @@
   background-color: hsla(106.01036269430053, 0.00%, 86.00%, 1.00);
   border-radius: 0.2em;
   font-weight: 500;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.main_button button:hover {
+
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 5px 20px 2px;
+    color: black;
+
+}
+
+.main_button button a{
+  color: hsla(103.63636363636364, 0.00%, 6.67%, 1.00);
+
 }
 
 .main__right-block {

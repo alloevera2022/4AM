@@ -98,6 +98,12 @@
     border-radius: 5px;
 }
 
+.faq__button button a {
+    color: black;
+
+
+}
+
 .faq__footer {
     font-weight: 500;
     padding: 3% 5%;
@@ -133,8 +139,9 @@
     gap: 5px;
 }
 
-.faq__footer-right-textdown {
+.faq__footer-right-textdown a {
     opacity: 0.4;
+    color: black;
 }
 
 @media (max-width: 1700px) {

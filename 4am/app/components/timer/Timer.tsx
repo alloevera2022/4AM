@@ -4,7 +4,7 @@ import "./timer.css";
 
 export default function Timer() {
     return (
-      <section className="Timer">
+      <section className="Timer" id='presale'>
         <div className="timer__conteiner">
             <div className="timer__info">
               <h1 className="timer__info-title">Become a Part<br/>of Revolution Now</h1>

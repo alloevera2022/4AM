@@ -9,7 +9,7 @@ import section1Img2 from '../public/img/section2_img2.webp';
 
 export default function Section1() {
     return (
-      <section className="Section1">
+      <section className="Section1" id='about'>
         <div className="section1__container">
             <h2 className="section1-subtitle">Welcome to AXXIS</h2>
             <div className="section1__title-container">
