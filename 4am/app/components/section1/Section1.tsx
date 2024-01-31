@@ -30,7 +30,7 @@ export default function Section1() {
                     </div>
                 </li>
 
-                <li className="section1__content-blog_item">
+                <li className="section1__content-blog_item " id="element2">
                     <img className="section1__content-blog_img" src={section1Img2.src} alt="section1Img1" />
                     <div className="section1__content-blog_text">
                         <div className="section1__content-blog_text-titleblog">
@@ -38,13 +38,10 @@ export default function Section1() {
                             <p className="section1__content-blog_text-title-num">2</p>
                         </div>
                         <h2 className="section1__content-blog_text-subtitle">The Secondary and Celebrity Floors offer a platform for trading and auctioning high-value fashion NFTs, with exclusive access for different membership levels.</h2>
-                    
-
                     </div>
                 </li>
                 <li className="section1__content-blog_item"></li>
             </ul>
-
         </div>
 
     </section >

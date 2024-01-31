@@ -94,10 +94,14 @@
 
     .Section1 {
         padding: 4% 3vw;
-        height: 92vh;
-        margin-bottom: 15%;
-    
+        height: 100vh;
+        margin-bottom: 10%;
     }
+
+    .section1__title-container {
+        margin-bottom: 6%;
+    }
+
     .section1__content-blog {
         flex-direction: column;
 
@@ -111,13 +115,15 @@
    .section1__title {
     font-size: 3vh;
     font-weight: 500;
+
 }
 
    #element1 {
     margin-right: 0;
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
 
 }
+
 
 .section1__content-blog_text-titleblog {
     margin-bottom: 1vh;
