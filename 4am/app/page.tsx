@@ -13,7 +13,6 @@ export default function Home() {
       <Section1 />
       <Timer />
       <FAQ />
-
     </main>
-  )
+  );
 }
