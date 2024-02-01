@@ -56,9 +56,7 @@
 .main_button {
   color: hsla(103.63636363636364, 0.00%, 6.67%, 1.00);
   text-decoration: none;
-  font-size: 26px;
-  
-  
+  font-size: 2.2vh;
 }
 
 .main_button button {
