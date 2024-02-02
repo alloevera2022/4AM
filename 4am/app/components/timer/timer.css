@@ -134,19 +134,19 @@
 
 .timer__clock_nums {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font-size: 4vh;
     padding: 0 0;
     margin-bottom: 4%;
 }
 
+.timer__clock_num {
+    flex: 1;
+    justify-content: center;
 
+}
 
 .timer__clock_num-up {
-    justify-content: center;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .timer__clock_num-up {
@@ -156,6 +156,7 @@
 .timer__clock_num-down {
     margin-bottom: 2%;
     font-size: 2vh;
+    text-align: center;
     color: rgba(255, 255, 255, 0.288);
     font-weight: 400;
 }
@@ -266,15 +267,6 @@
     .timer__clock_nums {
         font-size: 2.8vh;
         margin-bottom: 3%;
-    }
-    
-    .timer__clock_num-up {
-        font-size: 3.2vh;
-    }
-    
-    .timer__clock_num-down {
-        font-size: 2vh;
-
     }
 
 
