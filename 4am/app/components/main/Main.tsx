@@ -21,7 +21,7 @@ export default function Main() {
             {/* <div className="main_button">
               <a href="">Get Yours</a>
             </div> */}
-            <div className="main_button"><button><a href="#presale">Get yours</a></button></div>
+            <div className="main_button"><a href="#presale"><button>Get yours</button></a></div>
             <div className="main__left-block-content-links">
               <div className="main-link">
                 <a href="mailto:info@AXXISproject.io">
