@@ -18,10 +18,10 @@ export default function Main() {
               Own a piece of fashion, trade with ease, and step into a world
               where every item tells a story.
             </h2>
-            <div className="main_button">
-              <a href="#presale">Get Yours</a>
-            </div>
-            {/* <div className="main_button"><button><a href="https://twitter.com/XXS_crypto">Get yours</a></button></div> */}
+            {/* <div className="main_button">
+              <a href="">Get Yours</a>
+            </div> */}
+            <div className="main_button"><button><a href="#presale">Get yours</a></button></div>
             <div className="main__left-block-content-links">
               <div className="main-link">
                 <a href="mailto:info@AXXISproject.io">

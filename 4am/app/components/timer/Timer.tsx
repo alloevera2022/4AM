@@ -39,13 +39,11 @@ const TOKEN_ABI = parseAbi([
 
 export default function Timer() {
     const [amountToSpend, setAmountToSpend] = useState("1000.0")
-
     const [currency, setCurrency] = useState<"USDT" | "USDC">("USDC");
     const [currencyInfos, setCurrencyInfos] = useState<CurrencyInfo[]>([
         { "address": "0x0", "decimals": 6, "amount": BigInt("0") },
         { "address": "0x1", "decimals": 6, "amount": BigInt("0") },
     ]);
-
     const [isAmountOK, setIsAmountOK] = useState(true);
     const [parsedAmount, setParsedAmount] = useState(BigInt("1000000000"));
 
@@ -111,6 +109,19 @@ export default function Timer() {
 
     const action = useContractWrite(preparedBuy.config)
 
+    // Обработчики событий для изменения стиля при нажатии на кнопки
+    const handleUSDTButtonClick = () => {
+        setCurrency("USDT");
+        document.getElementById('usdtButton')?.classList.add('selected-currency');
+        document.getElementById('usdcButton')?.classList.remove('selected-currency');
+    };
+
+    const handleUSDCButtonClick = () => {
+        setCurrency("USDC");
+        document.getElementById('usdcButton')?.classList.add('selected-currency');
+        document.getElementById('usdtButton')?.classList.remove('selected-currency');
+    };
+
     return (
         <section className="Timer" id='presale'>
             <div className="timer__conteiner">
@@ -166,12 +177,12 @@ export default function Timer() {
                         </div>
                     </div>
                     <div className="timer__web3">
-                        <div>
+                        <div className="timer__web3_connect">
                             <ConnectButton
-                                label="Get yours"
+                                label="CONNECT"
                                 chainStatus="icon"
                                 accountStatus={{
-                                    smallScreen: "avatar",
+                                    smallScreen: "full",
                                     largeScreen: "full",
                                 }}
                                 showBalance={{
@@ -180,15 +191,15 @@ export default function Timer() {
                                 }}
                             />
                         </div>
-                        <div>
-                            <input type="text" value={amountToSpend}
+                        <div className="timer__web3_buy">
+                            <input type="text" placeholder='1000' value={amountToSpend}
                                 onChange={e => setAmountToSpend(e.target.value)}></input>
-                            <button className={`some-class${currency === "USDT" ? " selected-currency" : " "}`}
-                                onClick={() => setCurrency("USDT")}>USDT{formatAmount(currencyInfos[0])}</button>
-                            <button className={`some-class${currency === "USDC" ? " selected-currency" : " "}`}
-                                onClick={() => setCurrency("USDC")}>USDC{formatAmount(currencyInfos[1])}</button>
+                            <button id="usdtButton" className={`currency-button${currency === "USDT" ? " selected-currency" : ""}`}
+                                onClick={handleUSDTButtonClick}>USDT{formatAmount(currencyInfos[0])}</button>
+                            <button id="usdcButton" className={`currency-button${currency === "USDC" ? " selected-currency" : ""}`}
+                                onClick={handleUSDCButtonClick}>USDC{formatAmount(currencyInfos[1])}</button>
                         </div>
-                        <div>
+                        <div className="timer__web3_buybtn">
                             <button onClick={() => { action.write && action.write() }}>Buy!</button>
                         </div>
                     </div>
