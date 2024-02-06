@@ -208,8 +208,6 @@
     justify-content: space-between;
     width: 88%;
     font-size: 0.9rem;
-
-
 }
 
 .timer__web3_buy input{
@@ -233,8 +231,8 @@
     padding: 2% 4%;
     border: 2px solid #ccc;
     border-radius: 5px;
-    color: #161616;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #2b2b2b;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 
@@ -242,9 +240,9 @@
 
 .selected-currency {
     font-weight: 600;
-    background-color: #2b2b2b;
+    background-color: #ffffff;
     border-color: #ccc;
-    color: #ffffff;
+    color: #161616;
     box-shadow: rgba(255, 255, 255, 0.25) 0px 3px 22px 8px;   
 }
 
@@ -300,7 +298,7 @@
     }
 
     .timer__web3_buybtn {
-        margin-left: -9%;
+        margin-left: -7%;
         margin-bottom: 4%;
     }
     
@@ -373,6 +371,11 @@
 
 }
 @media (max-width: 767px) {
+    .Timer {
+        padding: 4% 3vw;
+        height: 92svh;
+        margin-bottom: 10%;
+    }
 
 .timer__content {
 
