@@ -2,7 +2,7 @@
     background-color: #161616;
     color: white;
     padding: 4% 40px 4% 3vw;
-    height: 88vh;
+    height: 88svh;
 }
 
 .timer__conteiner {
@@ -288,7 +288,7 @@
 
     .Timer {
         padding: 4% 3vw;
-        height: 92vh;
+        height: 92svh;
     }
 
     .timer__web3_connect {
