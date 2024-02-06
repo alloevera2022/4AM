@@ -58,7 +58,7 @@ const Providers = ({ children }: { children: ReactNode }) => {
     <WagmiConfig config={wagmiConfig} >
       <RainbowKitProvider 
          theme={darkTheme({
-          accentColor: '#dbdbdb',
+          accentColor: '#f2f2f2',
           accentColorForeground: '#121212',
           borderRadius: 'small',
           // overlayBlur: 'none',
