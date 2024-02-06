@@ -14,24 +14,24 @@ import {
   ledgerWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { mainnet, polygonMumbai, sepolia, lineaTestnet, optimism} from "wagmi/chains";
+import { sepolia} from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
 const projectId = "effed73ceee99d947720919370f0f035";
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [mainnet, polygonMumbai, sepolia, lineaTestnet, optimism],
+  [sepolia],
   [publicProvider()]
 );
 
 const { wallets } = getDefaultWallets({
-  appName: "RainbowKit demo",
+  appName: "AXXIS",
   projectId,
   chains,
 });
 
-const demoAppInfo = {
-  appName: "Rainbowkit Demo",
+const appInfo = {
+  appName: "AXXIS",
 };
 
 const connectors = connectorsForWallets([
@@ -65,7 +65,7 @@ const Providers = ({ children }: { children: ReactNode }) => {
           fontStack: 'system',
         })}
         chains={chains}
-        appInfo={demoAppInfo}
+        appInfo={appInfo}
         coolMode
       >
         {children}
