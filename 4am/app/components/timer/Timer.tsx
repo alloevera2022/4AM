@@ -9,7 +9,7 @@ import { formatUnits, parseAbi, parseEther, parseUnits } from "viem";
 import { useAccount, useChainId, useContractWrite, usePrepareContractWrite } from "wagmi";
 import { multicall } from "wagmi/actions";
 
-const saleContractAddress = "0x0";
+const saleContractAddress = "0x8dFB5231684f8cF0E8bF1Ab4d894E53654a5c353";
 
 interface CurrencyInfo {
     address: `0x${string}`,
@@ -41,8 +41,8 @@ export default function Timer() {
     const [amountToSpend, setAmountToSpend] = useState("1000.0")
     const [currency, setCurrency] = useState<"USDT" | "USDC">("USDC");
     const [currencyInfos, setCurrencyInfos] = useState<CurrencyInfo[]>([
-        { "address": "0x0", "decimals": 6, "amount": BigInt("0") },
-        { "address": "0x1", "decimals": 6, "amount": BigInt("0") },
+        { "address": "0x6f4948c484f6dEfC986c136562D98dfB3280EC18", "decimals": 18, "amount": BigInt("0") },
+        { "address": "0x1E44331ca731aFb1DA8A4B75a9f5E32199b15942", "decimals": 18, "amount": BigInt("0") },
     ]);
     const [isAmountOK, setIsAmountOK] = useState(true);
     const [parsedAmount, setParsedAmount] = useState(BigInt("1000000000"));
