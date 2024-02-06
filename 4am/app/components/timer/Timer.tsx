@@ -9,7 +9,7 @@ import { formatUnits, parseAbi, parseEther, parseUnits } from "viem";
 import { useAccount, useChainId, useContractWrite, usePrepareContractWrite } from "wagmi";
 import { multicall } from "wagmi/actions";
 
-const saleContractAddress = "0x0aca9d8a8651534f8065ec5e5824d577ffbab057";
+const saleContractAddress = "0x277bFD5b92cda825783319fCDBA6e637Dc181021";
 
 interface CurrencyInfo {
     address: `0x${string}`,
