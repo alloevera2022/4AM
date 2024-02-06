@@ -3,8 +3,6 @@ import mainLogo from "../public/img/logo_main.webp";
 import emailLogo from "../public/img/social_logo_svg/email_logo.svg";
 import telegramLogo from "../public/img/social_logo_svg/telegram_logo.svg";
 import xLogo from "../public/img/social_logo_svg/x_logo.svg";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { WalletButton } from "@rainbow-me/rainbowkit";
 
 export default function Main() {
   return (
@@ -21,18 +19,7 @@ export default function Main() {
               where every item tells a story.
             </h2>
             <div className="main_button">
-              <ConnectButton
-                label="Get yours"
-                chainStatus="icon" 
-                accountStatus={{
-                  smallScreen: "avatar",
-                  largeScreen: "full",
-                }}
-                showBalance={{
-                  smallScreen: false,
-                  largeScreen: true,
-                }}
-              />
+              <a href="#presale">Get Yours</a>
             </div>
             {/* <div className="main_button"><button><a href="https://twitter.com/XXS_crypto">Get yours</a></button></div> */}
             <div className="main__left-block-content-links">
