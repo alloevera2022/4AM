@@ -281,7 +281,7 @@ export default function Timer() {
                                 }
                                 } disabled={approveAction.isError}>Approve</button>
                             }
-                            {/* {transitionState === "approving" && approvalIsReady.status === "loading" && "Approve is in progress"} */}
+                            {transitionState === "approving" && approvalIsReady.status === "loading" && <button>Approving...</button>}
                             {(transitionState === "approved" ||
                                 (transitionState === "approving" && approvalIsReady.status === "success")) &&
                                 <button onClick={async () => {
@@ -291,6 +291,14 @@ export default function Timer() {
                                         try {
                                             const txHash = await buyAction.writeAsync();
                                             setPurchaseTxHash(txHash.hash);
+                                            const newCurrencyInfos = [
+                                                Object.assign({}, currencyInfos[0]),
+                                                Object.assign({}, currencyInfos[1]),
+                                            ];
+                                            const idx = currency === "USDT" ? 0 : 1;
+                                            newCurrencyInfos[idx].balance -= parsedAmount;
+                                            newCurrencyInfos[idx].approvedAmount -= parsedAmount;
+                                            setCurrencyInfos(newCurrencyInfos);
                                         } catch (e) {
                                             console.error(e)
                                             setTransitionState("approved");
@@ -299,7 +307,7 @@ export default function Timer() {
                                 }
                                 } disabled={buyAction.isError}>Buy!</button>
                             }
-                            {/* {transitionState === "buying" && purchaseIsReady.status === "loading" && "Buying..."} */}
+                            {transitionState === "buying" && purchaseIsReady.status === "loading" && <button>Buying...</button>}
                             {(transitionState === "buying" && purchaseIsReady.status === "success") && "Purchase completed!"}
                         </div>
                     </div>
