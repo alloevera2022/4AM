@@ -1,13 +1,12 @@
 .Section1 {
     padding: 4% 40px 4% 3vw;
-    height: 88svh;
+    height: 100svh;
     background-color: white;
 
 }
 
 .section1-subtitle {
     color: rgba(0, 0, 0, 0.5);
-
     font-size: 3.2vh;
     margin-bottom: 1%;
 }
@@ -47,7 +46,6 @@
 .section1__content-blog {
     display: flex;
     flex-direction: row;
-
 }
 
 .section1__content-blog_item {
@@ -86,20 +84,19 @@
 .section1__content-blog_text-subtitle {
     font-size: 1.85vh;
     font-weight: 400;
-
-
 }
+
 
 @media (max-width: 767px) {
 
     .Section1 {
-        padding: 4% 3vw;
+        padding: 2% 3vw;
         height: 110svh;
 
     }
 
     .section1__title-container {
-        margin-bottom: 6%;
+        margin-bottom: 2%;
     }
 
     .section1__content-blog {
@@ -109,7 +106,7 @@
 
    .section1-subtitle {
     font-size: 2.8vh;
-    margin-bottom: 1%;
+    margin-bottom: 0;
 }
 
    .section1__title {
@@ -120,7 +117,7 @@
 
    #element1 {
     margin-right: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 
 }
 

@@ -1,6 +1,7 @@
 "use client"
 
 import "./timer.css";
+import Wait from "./Wait";
 
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { WalletButton } from "@rainbow-me/rainbowkit";
@@ -183,6 +184,8 @@ export default function Timer() {
         document.getElementById('usdtButton')?.classList.remove('selected-currency');
     };
 
+    
+
     return (
         <section className="Timer" id='presale'>
             <div className="timer__conteiner">
@@ -208,7 +211,7 @@ export default function Timer() {
                     <div>{approvalTxHash} {approvalIsReady.fetchStatus} st={approvalIsReady.status}
                         suc={approvalIsReady.isSuccess} 
                     </div> */}
-                    <div className="timer__clock">
+                    {/* <div className="timer__clock">
                         <h2 className="timer__clock_title">Until presale end</h2>
                         <div className="timer__clock_nums">
                             <div className="timer__clock_num">
@@ -240,7 +243,10 @@ export default function Timer() {
                                 <p className="timer__clock_percent100">100%</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
+                    <Wait/>
+                    
                     <div className="timer__web3">
                         <div className="timer__web3_connect">
                             <ConnectButton
@@ -308,7 +314,7 @@ export default function Timer() {
                                 } disabled={buyAction.isError}>Buy!</button>
                             }
                             {transitionState === "buying" && purchaseIsReady.status === "loading" && <button>Buying...</button>}
-                            {(transitionState === "buying" && purchaseIsReady.status === "success") && "Purchase completed!"}
+                            {(transitionState === "buying" && purchaseIsReady.status === "success") && <span className="purchase-completed">Purchase completed!</span>}
                         </div>
                     </div>
                 </div>
