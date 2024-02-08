@@ -1,6 +1,6 @@
 .Main {
   overflow: hidden;
-  margin-top: 12vh; /* Исправлено: была опечатка (12svh -> 12vh) */
+  margin-top: 10vh; /* Исправлено: была опечатка (12svh -> 12vh) */
 }
 
 .main__left-block, 
@@ -22,7 +22,7 @@
 
 /* Опциональные стили для улучшения визуального восприятия */
 .main__left-block {
-  height: 88vh;
+  height: 90vh;
   background-color: #242424;
   color: white;
 }
@@ -85,7 +85,7 @@
 }
 
 .main__right-block {
-  height: 88vh;
+  height: 90vh;
   background-image: url("../public/img/main_img.webp");
   background-size: cover;
 }
@@ -123,9 +123,6 @@
 }
 
 @media( max-width: 1100px){
-
- 
-
 
   .Main {
     display: flex;

@@ -56,13 +56,14 @@ const wagmiConfig = createConfig({
 const Providers = ({ children }: { children: ReactNode }) => {
   return (
     <WagmiConfig config={wagmiConfig} >
-      <RainbowKitProvider 
+      <RainbowKitProvider locale="en"
          theme={darkTheme({
           accentColor: '#f2f2f2',
           accentColorForeground: '#121212',
           borderRadius: 'small',
           // overlayBlur: 'none',
           fontStack: 'system',
+          
         })}
         chains={chains}
         appInfo={appInfo}

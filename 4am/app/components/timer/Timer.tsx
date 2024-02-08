@@ -207,43 +207,6 @@ export default function Timer() {
                             <li className="timer__manual_listpoint">Receive $AXXIS by $0.01 ratio</li>
                         </ol>
                     </div>
-                    {/* <div>{transitionState} {parsedAmount.toString()}</div>
-                    <div>{approvalTxHash} {approvalIsReady.fetchStatus} st={approvalIsReady.status}
-                        suc={approvalIsReady.isSuccess} 
-                    </div> */}
-                    {/* <div className="timer__clock">
-                        <h2 className="timer__clock_title">Until presale end</h2>
-                        <div className="timer__clock_nums">
-                            <div className="timer__clock_num">
-                                <h2 className="timer__clock_num-up">00</h2>
-                                <h2 className="timer__clock_num-down">Days</h2>
-                            </div>
-                            <p className="timer__clock_nums_dots">:</p>
-                            <div className="timer__clock_num">
-                                <h2 className="timer__clock_num-up">00</h2>
-                                <h2 className="timer__clock_num-down">Hours</h2>
-                            </div>
-                            <p className="timer__clock_nums_dots">:</p>
-                            <div className="timer__clock_num">
-                                <h2 className="timer__clock_num-up">00</h2>
-                                <h2 className="timer__clock_num-down">Minutes</h2>
-                            </div>
-                            <p className="timer__clock_nums_dots">:</p>
-                            <div className="timer__clock_num">
-                                <h2 className="timer__clock_num-up">00</h2>
-                                <h2 className="timer__clock_num-down">Seconds</h2>
-                            </div>
-                        </div>
-                        <div className="timer__clock_timelineblock">
-                            <div className="timer__clock_timeline">
-                                <div className="timer__clock_timeline-dot"></div>
-                            </div>
-                            <div className="timer__clock_percents">
-                                <p className="timer__clock_percent0">0%</p>
-                                <p className="timer__clock_percent100">100%</p>
-                            </div>
-                        </div>
-                    </div> */}
 
                     <Wait/>
                     
@@ -317,6 +280,9 @@ export default function Timer() {
                             {(transitionState === "buying" && purchaseIsReady.status === "success") && <span className="purchase-completed">Purchase completed!</span>}
                         </div>
                     </div>
+                    <div className="counterdynamic-svg"><svg width="557" height="557" viewBox="0 0 557 557" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M415.936 322.422V322.422C421.497 332.053 451.661 337.894 451.877 326.775C452.377 300.966 446.071 274.695 432.223 250.71C394.363 185.133 313.524 159.84 245.828 189.869C238.706 193.029 236.363 201.73 240.262 208.476L278.292 274.285C282.114 280.9 290.512 283.117 297.647 280.385C341.289 263.674 391.826 280.662 415.936 322.422ZM294.31 302.005C290.393 295.226 292.776 286.44 300.121 283.729C341.717 268.376 389.552 284.722 412.472 324.422C437.952 368.553 423.045 424.92 379.219 450.724C378.938 450.889 378.656 451.053 378.373 451.216C334.03 476.712 277.397 461.496 251.811 417.179C228.837 377.388 238.697 327.65 272.984 299.337C279.005 294.364 287.778 296.696 291.685 303.458L374.924 447.5C375.339 448.217 376.256 448.463 376.973 448.048V448.048C377.691 447.634 377.936 446.716 377.522 445.999L294.31 302.005ZM275.668 275.741C279.5 282.372 277.207 290.777 271.249 295.588C234.825 325.003 224.201 377.358 248.347 419.179V419.179C253.908 428.811 243.884 457.855 234.147 452.482C211.545 440.01 191.947 421.414 178.099 397.428C140.204 331.793 158.787 249.048 218.769 205.468C225.064 200.894 233.756 203.214 237.649 209.951L275.668 275.741ZM221.636 182.24C225.48 188.893 223.192 197.353 216.956 201.842C154.909 246.505 135.593 331.806 174.635 399.428C204.631 451.383 260.889 478.723 316.96 474.36C235.437 490.433 149.202 454.175 105.339 378.202C52.7291 287.079 80.0753 171.734 165.61 113.408C172.02 109.036 180.669 111.349 184.551 118.067L221.636 182.24ZM224.248 180.765C228.087 187.409 236.543 189.654 243.542 186.509C313.219 155.197 396.67 181.129 435.687 248.71C465.314 300.024 461.336 361.519 430.581 407.711C483.714 345.183 494.693 253.584 451.315 178.452C398.857 87.5914 285.793 53.5356 192.666 97.8658C185.637 101.212 183.291 109.89 187.186 116.631L224.248 180.765ZM382.47 453.451C381.876 453.805 381.28 454.156 380.68 454.503L380.52 454.595L380.371 454.682L380.202 454.779C282.75 511.043 158.139 477.654 101.875 380.202C45.6109 282.75 79.0004 158.139 176.452 101.875C273.904 45.6109 398.515 79.0004 454.779 176.452C510.604 273.144 478.169 396.574 382.47 453.451Z" fill="white" fill-opacity="0.05"></path>
+</svg></div>
                 </div>
             </div>
         </section >

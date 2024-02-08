@@ -7,6 +7,7 @@ const Wait: React.FC = () => {
   const [seconds, setSeconds] = useState<number>(0);
   const [progress, setProgress] = useState<number>(0);
 
+
   useEffect(() => {
     const endDate = new Date("March 1, 2024 00:00:00").getTime();
 

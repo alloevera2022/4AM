@@ -4,6 +4,7 @@ import emailLogo from "../public/img/social_logo_svg/email_logo.svg";
 import telegramLogo from "../public/img/social_logo_svg/telegram_logo.svg";
 import xLogo from "../public/img/social_logo_svg/x_logo.svg";
 
+
 export default function Main() {
   return (
     <section className="Main">

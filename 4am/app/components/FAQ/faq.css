@@ -14,7 +14,6 @@
     position: relative; /* Добавьте position: relative; для корректной работы z-index */
     padding: 4% 40px 4% 3vw;
     height: auto;
-
     justify-content: center;
     align-items: center;
 }
@@ -39,50 +38,82 @@
 .faq__content {
     padding: 5%;
 }
-
+/* Стили для элемента FAQ */
 .faq__content-element {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
     padding: 2%;
     font-size: 1.8vh;
-    height: 136px;
+    transition: border-color 0.3s ease; /* Плавное изменение цвета границы */
 }
+
 
 .faq__content-element_headerblog {
     display: flex;
     justify-content: space-between; 
     margin-bottom: 2%;  
+    cursor: pointer;
+}
+
+
+.faq__content-element_text {
+    opacity: 0; /* Начальное состояние: невидимый */
+    max-height: 0; /* Начальное состояние: скрытый */
+    overflow: hidden; /* Для скрытия содержимого */
+    transition: max-height 0.8s linear, opacity 1s ease; /* Плавное изменение высоты и прозрачности */
+}
+
+/* При активации элемента */
+.faq__content-element_text.active {
+    opacity: 1; /* Прозрачность: видимый */
+    max-height: 500px; /* Установите максимальную высоту на ваш выбор */
 }
 
 .faq__content-element_header {
     font-weight: 500;
 }
 
+/* Стили для кнопки крестика */
 .faq__content-element_headercross {
+    color: black;
     position: relative;
     width: 2vh;
     height: 2vh;
     cursor: pointer;
-  }
+    transition: transform 0.3s ease; /* Плавное изменение поворота */
+}
 
+/* Содержимое для псевдоэлементов */
 .faq__content-element_headercross::before,
 .faq__content-element_headercross::after {
-  content: '';
-  position: absolute;
-  width: 1.5px;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.781);
-  top: 0;
-  left: 50%;
+    content: ''; /* Добавляем содержимое */
+    position: absolute;
+    width: 1.5px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.781);
+    top: 0;
+    left: 50%;
+    transition: transform 0.3s ease;
+ /* Плавное изменение поворота */
 }
 
 .faq__content-element_headercross::before {
-  transform: rotate(45deg);
+    transform: rotate(180deg);
+    width: 1.5px;
+  }
+  
+  .faq__content-element_headercross::after {
+    transform: rotate(-90deg);
+    width: 1.5px;
+  }
+
+/* Поворот крестика в плюсик */
+.faq__content-element_headercross.active::before {
+    transform: rotate(45deg);
 }
 
-.faq__content-element_headercross::after {
-  transform: rotate(-45deg);
+.faq__content-element_headercross.active::after {
+    transform: rotate(-45deg);
 }
-
 
 .faq__button {
     display: flex;

@@ -1,4 +1,5 @@
 import "./header.css";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export default function Header() {
     return (
@@ -9,8 +10,22 @@ export default function Header() {
         <a href="https://axxis.gitbook.io/axxis-project/token-economics">Whitepaper</a>
         <a href="#faq">F.A.Q.</a>
       </nav>
-      <button className="action-button">Coming soon</button>
+      <div  className="action-button"> <ConnectButton
+                                label="Connect Wallet"
+                                chainStatus="icon"
+                                accountStatus={{
+                                    smallScreen: "full",
+                                    largeScreen: "full",
+                                }}
+                                showBalance={{
+                                    smallScreen: false,
+                                    largeScreen: true,
+                                }}
+                            /></div>
     </header>
     );
   }
+
+
+  
   
