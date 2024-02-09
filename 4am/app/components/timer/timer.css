@@ -156,15 +156,11 @@
 }
 
 .timer__clock_timeline-dot {
-    margin-right: 2px;
-    width: 6%; /* Ширина в процентах от ширины окна просмотра */
-    height: 90%; /* Высота в процентах от ширины окна просмотра */
-    border-radius: 50%;
-    background-color: #161616;
-    border: 1px solid white;
-    display: flex; /* Включаем flexbox */
-    align-items: center; /* Центрируем по вертикали */
-    justify-content: center; /* Центрируем по горизонтали */
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #ffffff;
+    background-color: #151b17;
+    border-radius: 100em;
 }
 
 .timer__clock_percents {
@@ -280,17 +276,6 @@
 
   
 
-
-@media (max-width: 1110px) {
-  
-    .timer__clock_timeline-dot {
-
-       display: none;
-
-    }
-
-}
-
 @media (max-width: 1025px) {
 
     .Timer {
@@ -396,11 +381,6 @@
     align-items: center;
     justify-content: center;
 }
-
-.timer__clock_timeline-dot {
-    width: 9%;
-    display: block;
- }
 
 .counterdynamic-svg {
      width: 28em;
