@@ -226,8 +226,6 @@
     }
 
     .faq__content-element {
-        border-bottom: 1px solid black;
-        padding: 2% 2% 5% 2%;
         font-size: 1.8vh;
         margin-bottom: 5%;
     }
